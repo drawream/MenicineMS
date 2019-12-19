@@ -3,13 +3,47 @@
 <html>
   <head>
     <title>My JSP 'add.jsp' starting page</title>
+    <style type="text/css">
+			.header{
+				height: 100px;
+				background-color: gray;
+			}
+			body {
+				margin: 0;
+				padding: 0;
+				font-family: Georgia, Palatino, serif;
+				}
+			.main{
+				
+				text-align: center;
+				height: 550px;
+			}
+			td {
+			    text-align:center;
+			}
+			.footer{
+
+				height: 80px;
+				background-color: gray;
+			}
+			form{
+				margin-top: 30px;
+			}
+
+		</style>
   </head>
   <body>
-	<form action = "addResult.jsp" method = "post">
-		姓名：<input type="text" name = "name"/><br/>
-		年龄：<input type="text" name = "age"/><br/>
-		专业：<input type="text" name = "major"/><br/>
-		<input type = "submit" value = "注册"/>
+  <div class = "header">
+	</div>
+		<div class="main">
+	<form action = "DoctorAddServlet" method = "post">
+		姓名：<input type="text" name = "name"/><br/><br/>
+		年龄：<input type="text" name = "age"/><br/><br/>
+		专业：<input type="text" name = "major"/><br/><br/>
+		<input type = "submit" value = "添加"/>
 	</form>
+	</div>
+		<div class = "footer">
+		</div>
   </body>
 </html>

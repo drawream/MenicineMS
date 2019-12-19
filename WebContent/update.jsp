@@ -16,7 +16,7 @@ Doctor d  = dd.getById(id);
   </head>
   
   <body>
-    <form action = "updateResult.jsp" method = "post">
+    <form action = "DoctorUpdateServlet" method = "post">
     	编号：<input type="text" name = "id" value = <%=d.getId() %> readonly="readonly"><br/>
 		姓名：<input type="text" name = "name" value = <%=d.getName() %>><br/>
 		年龄：<input type="text" name = "age" value = <%=d.getAge() %>><br/>
