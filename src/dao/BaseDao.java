@@ -9,7 +9,7 @@ import java.sql.SQLException;
 public class BaseDao {
     // 四大属性
     private String driver = "com.mysql.jdbc.Driver";
-    private String url = "jdbc:mysql://localhost:3308/hospital";
+    private String url = "jdbc:mysql://localhost:3306/hospital";
     private String user = "root";
     private String password = "root";
     // 三大对象
